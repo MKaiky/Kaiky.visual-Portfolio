@@ -69,7 +69,7 @@ export const projects: Project[] = [
     year: '2026',
     category: 'Projeto pessoal',
     filterCategory: 'Eventos',
-    cover: '/images/projetos/important-project-01.jpg.JPG',
+    cover: '/images/projetos/important-project-01.jpg',
     description: 'Apresentação CONEDU | Escola de São João.',
     images: ['/images/projetos/important-project-01.jpg',
               '/images/projetos/important-project-02.jpg',
