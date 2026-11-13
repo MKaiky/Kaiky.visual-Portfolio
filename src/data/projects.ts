@@ -8,6 +8,7 @@ export type Project = {
   cover: string;
   description: string;
   images: string[];
+  video?: string;
 };
 
 // Para adicionar um projeto, copie um bloco e atualize os dados.
@@ -36,48 +37,81 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: 'dia-das-criancas-ajurcc',
-    title: 'Dia das Crianças | AJURCC',
-    year: '2026',
-    category: 'Evento · Fotografia',
-    filterCategory: 'Eventos',
-    cover: '/images/projetos/dia-das-criancas-ajurcc-01.jpg',
-    description:
-      'Cores, brincadeiras e encontros em um dia dedicado às crianças na AJURCC.',
-    images: [
-      '/images/projetos/dia-das-criancas-ajurcc-01.jpg',
-      '/images/projetos/dia-das-criancas-ajurcc-02.jpg',
-    ],
-  },
-  {
-    slug: 'gravacao-documentario',
-    title: 'Gravação de Documentário',
-    year: '2026',
-    category: 'Audiovisual · Bastidores',
-    filterCategory: 'Documentários',
-    cover: '/images/projetos/gravacao-documentario-01.jpg',
-    description:
-      'Bastidores e registros de uma gravação documental, acompanhando pessoas e histórias em seu contexto real.',
-    images: [
-      '/images/projetos/gravacao-documentario-01.jpg',
-      '/images/projetos/gravacao-documentario-02.jpg',
-    ],
-  },
-  {
     slug: 'apresentacao-conedu-escola-sao-joao',
     title: 'Apresentação CONEDU | Escola de São João',
     year: '2026',
-    category: 'Projeto pessoal',
+    category: 'Eventos',
     filterCategory: 'Eventos',
     cover: '/images/projetos/important-project-01.jpg',
-    description: 'Apresentação CONEDU | Escola de São João.',
-    images: ['/images/projetos/important-project-01.jpg',
-              '/images/projetos/important-project-02.jpg',
-              '/images/projetos/important-project-03.jpg',
-              '/images/projetos/important-project-04.jpg',
-              '/images/projetos/important-project-05.jpg',
-              '/images/projetos/important-project-06.jpg',
-              '/images/projetos/important-project-07.jpg',
+    description:
+      'Apresentação CONEDU | Escola de São João.',
+    images: [
+      '/images/projetos/important-project-01.jpg',
+      '/images/projetos/important-project-02.jpg',
+      '/images/projetos/important-project-03.jpg',
+      '/images/projetos/important-project-04.jpg',
+      '/images/projetos/important-project-05.jpg',
+      '/images/projetos/important-project-06.jpg',
+      '/images/projetos/important-project-07.jpg',
+    ],
+  },
+  {
+    slug: 'documentario-cozinha-comunitaria',
+    title: 'Documentário | Cozinha Comunitária - Mauro Malessardi',
+    year: '2026',
+    category: 'Documentário, Bastidores',
+    filterCategory: 'Documentários',
+    cover: '/images/projetos/Doc-Cozinha.jpg',
+    description:
+      'Registro audiovisual da Cozinha Comunitária - Mauro Malessardi.',
+    images: [],
+    video:
+      'https://drive.google.com/file/d/1twnTBFeQX7AHuWdruN1SLSJuMP2lbvJk/preview',
+  },
+  {
+    slug: 'Documentario-Feira-da-Prata-VIDEO-e-BASTIDORES',
+    title: 'Documentário | Feira da Prata - Documentário e Bastidores',
+    year: '2026',
+    category: 'Documentário, Bastidores',
+    filterCategory: 'Documentários',
+    cover: '/images/projetos/IMG_5995.jpg',
+    description:
+      'Bastidores e registros de uma gravação documental, acompanhando pessoas e histórias em seu contexto real.',
+    images: [
+      '/images/projetos/IMG_5996.jpeg',
+      '/images/projetos/IMG_5993.jpg',
+      '/images/projetos/IMG_5995.jpg',
+      '/images/projetos/IMG_6006.jpg',
+      '/images/projetos/IMG_6049.jpg',
+      '/images/projetos/IMG_6033.jpg',
+      '/images/projetos/IMG_6045.jpg',
+      '/images/projetos/IMG_6047.jpg',
+    ],
+  },
+  {
+    slug: 'Fotografia-Futsal',
+    title: 'Fotos | Futsal - Racha Amigos',
+    year: '2026',
+    category: 'Esportes, Fotografia',
+    filterCategory: 'Outros',
+    cover: '/images/projetos/IMG_6908.JPG',
+    description:
+      'Fotos de um racha de futsal entre amigos, capturando a energia e a camaradagem do jogo.',
+    images: [
+      '/images/projetos/IMG_6712.JPG',
+      '/images/projetos/IMG_6820.JPG',
+      '/images/projetos/IMG_6841.JPG',
+      '/images/projetos/IMG_6872.JPG',
+      '/images/projetos/IMG_6887.JPG',
+      '/images/projetos/IMG_6901.JPG',
+      '/images/projetos/IMG_6908.JPG',
+      '/images/projetos/IMG_6960.JPG',
+      '/images/projetos/IMG_6973.JPG',
+      '/images/projetos/IMG_6981.JPG',
+      '/images/projetos/IMG_6986.JPG',
+      '/images/projetos/IMG_6991.JPG',
+      '/images/projetos/IMG_7009.JPG',
+      '/images/projetos/IMG_7078.JPG',
     ],
   },
 ];

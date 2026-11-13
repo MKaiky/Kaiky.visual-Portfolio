@@ -115,10 +115,32 @@ export default function ProjectPage() {
           </p>
         </section>
 
+        {/* GALERIA DE VÍDEO E FOTOGRAFIAS */}
         <section
           aria-label={`Galeria do projeto ${project.title}`}
           className="mt-10 grid grid-cols-1 gap-5 sm:mt-14 sm:grid-cols-2 sm:gap-7"
         >
+          {/* PLAYER DE VÍDEO - GOOGLE DRIVE */}
+          {project.video && (
+            <figure className="min-w-0 sm:col-span-2">
+              <div className="overflow-hidden rounded-xl bg-[#181818]">
+                <iframe
+                  src={project.video}
+                  title={project.title}
+                  className="block aspect-video w-full"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
+
+              <figcaption className="mt-3 text-xs tracking-wide text-neutral-500">
+                DOCUMENTÁRIO · VÍDEO
+              </figcaption>
+            </figure>
+          )}
+
+          {/* GALERIA DE FOTOGRAFIAS */}
           {project.images.map((src, index) => (
             <figure
               key={src}
@@ -151,6 +173,7 @@ export default function ProjectPage() {
           ))}
         </section>
 
+        {/* CHAMADA FINAL */}
         <section className="mt-20 flex flex-col items-start justify-between gap-6 border-t border-neutral-200 pt-10 sm:mt-28 sm:flex-row sm:items-center sm:pt-12">
           <div>
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500">
